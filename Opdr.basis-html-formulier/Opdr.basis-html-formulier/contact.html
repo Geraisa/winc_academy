@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Opdracht HTML lay-out elementen</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Contact</h1>
+            <nav>
+                <ul class="header-ul">
+                    <li><a href="index.html">Terug naar de eerste pagina</a></li>
+                    <li><a href="about.html">Over Mij</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form name="contact" method="POST" data-netlify="true">
+                <p><label>Naam:<input type="text"></label></p>
+                <p><label>Email:<input type="email"></label></p>
+                <p><label>Telefoonnummer:<input type="tel"></label></p>
+                <p><label>Leeftijd:<input type="number"></label></p>
+                <p><label>Geboortedatum:<input type="date"></label></p>
+                <p><label>Gender:</label>
+                    <input type="radio" id="Man" name="gender" value="Man">
+                    <label for="male">Man</label>
+                    <input type="radio" id="Vrouw" name="gender" value="Vrouw">
+                    <label for="female">Vrouw</label>
+                </p>
+                <p><label>Favoriete cuisine:</label>
+                    <input type="checkbox" id="cuisine" name="cuisine" value="Frans">
+                    <label for="cuisine"> Frans</label>
+                    <input type="checkbox" id="cuisine1" name="cuisine" value="Italiaans">
+                    <label for="cuisine"> Italiaans</label>
+                    <input type="checkbox" id="cuisine2" name="cuisine" value="Spaans">
+                    <label for="cuisine"> Spaans</label>
+                </p>
+                <p><label>Favoriete kleur van short:<input type="color"></label></p>
+                <p><label>Biografie:<textarea name="text" cols="30" rows="10"></textarea></label></p>
+                <p><label>Upload je laatste recept:<input type="file"></label></p>
+                <p><label>Url naar je recepten website:<input type="url"></label></p>
+                <p><input type="reset"></p>
+                <p><input type="submit"></p>
+            </form>            
+        </main>
+        <footer class="footer">
+        <p>Dit is een footer</p>
+        </footer>
+    </body>
+</html>
