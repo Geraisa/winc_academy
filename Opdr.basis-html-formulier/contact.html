@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Opdracht HTML lay-out elementen</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Contact</h1>
+            <nav>
+                <ul class="header-ul">
+                    <li><a href="index.html">Terug naar de eerste pagina</a></li>
+                    <li><a href="about.html">Over Mij</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form name="contact" method="POST" data-netlify="true">
+                <p><label>Naam:<input type="text"></label></p>
+                <p><label>Email:<input type="email"></label></p>
+                <p><label>Stel je vraag:<textarea name="text" cols="30" rows="10"></textarea></label></p>
+                <p><input type="submit"></p>
+            </form>            
+        </main>
+        <footer class="footer">
+        <p>Dit is een footer</p>
+        </footer>
+    </body>
+</html>
