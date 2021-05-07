@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/*      HEADER GEDEELTE      */
+
+header {
+  background-color: #80b85e;
+}
+nav {
+  height: 15vh;
+  width: 100%;
+}
+.logo {
+  color: white;
+  font-size: 40px;
+  line-height: 10vh;
+  font-weight: bold;
+  font-family: "Lobster";
+  text-align: center;
+}
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0 15px;
+}
+a.active,
+a:hover {
+  font-weight: bold;
+}
+
+/*      BANNER GEDEELTE      */
+
+.welkom {
+  background-image: url(../Vakantiehuisjes/IMG/huisje1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  position: relative;
+}
+.welkom-tekst {
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: white;
+  border: 5px solid #80b85e;
+}
+.welkom-tekst h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #3a7257;
+}
+p {
+  font-size: 16px;
+}
+button {
+  font-weight: bold;
+  margin: 20px;
+  width: 90px;
+  height: 40px;
+  border-radius: 8%;
+  background-color: #80b85e;
+  border: none;
+}
+button a {
+  color: white;
+}
+
+/*      HUISJES GEDEELTE      */
+
+.huis {
+  background-color: #80b85e;
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  font-family: "lobster";
+  padding: 70px;
+}
+.huisjes {
+  text-align: center;
+  margin: 20px 50px;
+  display: inline-block;
+}
+.huisjes img {
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 25px;
+  font-family: "lobster";
+  color: white;
+}
+.huisjes p {
+  color: white;
+  margin: 15px;
+  line-height: 20px;
+}
+
+/*      FAMILIE GEDEELTE      */
+
+.vakantie {
+  text-align: center;
+}
+.vakantie h2 {
+  color: #3a7257;
+}
+.familie {
+  display: inline-block;
+  margin: 20px 50px;
+}
+.familie h3 {
+  color: #3a7257;
+}
+.familie p {
+  color: #3a7257;
+  margin: 15px;
+  line-height: 20px;
+}
+.familie img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+footer {
+  background-color: #80b85e;
+  height: 10vh;
+  color: white;
+  text-align: center;
+  line-height: 10vh;
+  font-weight: bold;
+}
+
+/*      OVER ONS GEDEELTE      */
+
+.over-ons {
+  width: 100%;
+  text-align: center;
+}
+.over-tekst {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #3a7257;
+}
+.over-tekst h1 {
+  font-size: 40px;
+  font-family: "lobster";
+}
+.over-tekst p {
+  font-size: 16px;
+  margin: 30px 20px;
+}
+.over-img {
+  width: 100%;
+}
+
+/*      CONTACT GEDEELTE      */
+
+.contact {
+  width: 100%;
+}
+.contact-tekst {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #3a7257;
+}
+.contact-tekst h1 {
+  font-size: 40px;
+  font-family: "lobster";
+}
+.contact-tekst p {
+  font-size: 16px;
+  margin: 30px 20px;
+}
+.contact-img {
+  width: 100%;
+  text-align: center;
+}
+
+/*     FORMULIER    */
+
+form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #80b85e;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #80b85e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #3a7257;
+}
+
+/*                      MEDIA QUERIES GEDEELTE                         */
+
+@media screen and (min-width: 768px) {
+  .welkom-tekst {
+    top: 30%;
+    padding-top: 30px;
+    color: #3a7257;
+  }
+  button {
+    margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    border-radius: 8%;
+    background-color: #80b85e;
+  }
+  button a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    line-height: 10vh;
+    height: 10vh;
+    justify-content: space-around;
+  }
+
+  .welkom {
+    height: 90vh;
+  }
+  .welkom-tekst {
+    top: 30%;
+    left: 50%;
+    padding-top: 30px;
+  }
+
+  button {
+    margin-top: 30px;
+  }
+  .huis {
+    padding: 50px;
+  }
+  .huisjes {
+    margin: 20px 40px;
+  }
+  h2 {
+    font-size: 50px;
+    letter-spacing: 4px;
+    padding: 70px;
+  }
+
+  .vakantie {
+    margin-bottom: 50px;
+  }
+
+  .over-ons {
+    margin: 58px 0;
+    display: flex;
+  }
+  .over-tekst {
+    width: 50%;
+    margin: 150px 50px 0 150px;
+    flex: 1;
+  }
+  .over-img {
+    width: 100%;
+    margin-top: 5px;
+    flex: 1;
+  }
+
+  .contact {
+    background-image: url(../Vakantiehuisjes/IMG/huisje1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    top: 0px;
+    bottom: -50px;
+    padding: 50px;
+  }
+  .contact-img {
+    display: none;
+  }
+  .contact-tekst {
+    color: white;
+    width: 50%;
+    margin: 40px auto;
+    text-shadow: 1px 1px black;
+  }
+
+  form {
+    width: 50%;
+    margin: 0 auto;
+    color: black;
+  }
+}
