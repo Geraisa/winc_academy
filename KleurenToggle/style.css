@@ -1,0 +1,55 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Helvetica neue", sans-serif;
+}
+
+label {
+  margin: 0 20px;
+  font-size: 60px;
+  display: block;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  text-align: center;
+  width: 250px;
+  display: none;
+}
+
+.menu li {
+  border-bottom: 1px solid grey;
+  line-height: 80px;
+  font-size: 40px;
+}
+
+#toggle:checked + .menu {
+  display: block;
+}
+
+.homeColor:hover {
+  background-color: white;
+}
+.redColor:hover {
+  background-color: red;
+}
+.yellowColor:hover {
+  background-color: yellow;
+}
+.greenColor:hover {
+  background-color: green;
+}
+.blueColor:hover {
+  background-color: blue;
+}
+.purpleColor:hover {
+  background-color: purple;
+}
