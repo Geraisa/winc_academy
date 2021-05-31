@@ -28,7 +28,3 @@ blue.addEventListener('click', e => {
 purple.addEventListener('click', e => {
     document.body.style.backgroundColor = "purple";
 })
-
-$('.navbar-collapse a').click(function(){
-    $(".navbar-collapse").collapse('hide');
-});
