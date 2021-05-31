@@ -43,7 +43,4 @@ purple.addEventListener('click', e => {
     menu.classList.toggle('menu')
 })
 
-hamburger.addEventListener("mouseover", e => {
-    menu.classList.toggle("visible");
-})
 
